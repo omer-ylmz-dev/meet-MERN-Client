@@ -70,47 +70,47 @@ This app's authentication method is OAuth 2.0. If you login, you will get two to
 
 # Desktop View
 
-![image](./images/screenshot1.jpg)
+![image](./images/screenshot1.png)
 
 #
 #
 
-![image](./images/screenshot2.jpg)
+![image](./images/screenshot2.png)
 
 #
 #
 
-![image](./images/screenshot3.jpg)
+![image](./images/screenshot3.png)
 
 #
 #
 
-![image](./images/screenshot4.jpg)
+![image](./images/screenshot4.png)
 
 #
 #
 
-![image](./images/screenshot5.jpg)
+![image](./images/screenshot5.png)
 
 #
 #
 
-![image](./images/screenshot6.jpg)
+![image](./images/screenshot6.png)
 
 #
 #
 
-![image](./images/screenshot7.jpg)
+![image](./images/screenshot7.png)
 
 #
 #
 
-![image](./images/screenshot8.jpg)
+![image](./images/screenshot8.png)
 
 #
 #
 
-![image](./images/screenshot9.jpg)
+![image](./images/screenshot9.png)
 
 #
 #
@@ -120,37 +120,37 @@ This app's authentication method is OAuth 2.0. If you login, you will get two to
 # Mobile View
 
 
-![image](./images/mobilescreenshot1.jpg)
+![image](./images/mobilescreenshot1.png)
 
 #
 #
 
-![image](./images/mobilescreenshot2.jpg)
+![image](./images/mobilescreenshot2.png)
 
 #
 #
 
-![image](./images/mobilescreenshot3.jpg)
+![image](./images/mobilescreenshot3.png)
 
 #
 #
 
-![image](./images/mobilescreenshot4.jpg)
+![image](./images/mobilescreenshot4.png)
 
 #
 #
 
-![image](./images/mobilescreenshot5.jpg)
+![image](./images/mobilescreenshot5.png)
 
 #
 #
 
-![image](./images/mobilescreenshot6.jpg)
+![image](./images/mobilescreenshot6.png)
 
 #
 #
 
-![image](./images/mobilescreenshot7.jpg)
+![image](./images/mobilescreenshot7.png)
 
 #
 #
@@ -164,9 +164,9 @@ This app's authentication method is OAuth 2.0. If you login, you will get two to
 for client
 
 ```
-$ cd .../client
 $ npm install
-$ npm run dev
+$ npm run build
+$ npm run preview
 
 ```
 
@@ -178,7 +178,6 @@ for server
 
 ```
 
-$ cd .../server
 $ npm install
 $ npm run start
 
