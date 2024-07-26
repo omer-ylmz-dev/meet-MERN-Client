@@ -1,0 +1,1239 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap');
+
+*{
+	box-sizing:border-box;
+}
+
+body{
+	margin:0;
+}
+
+/* GOOGLE FONTS */
+
+.poppins-extralight {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+
+.developedBy{
+	position:absolute;
+	right:3px;
+	font-size:12px;
+	cursor:pointer;
+	user-select:none;
+	text-decoration:none;
+	color:black;
+}
+
+
+/* --------------------------------- NAVBAR --------------------------------- */
+
+.navbar{
+	background-color:white;
+	box-shadow:0 1px 2px 0 rgb(60 64 67 / 30%), 0 2px 6px 2px rgb(60 64 67 / 15%);
+	position:fixed;
+	width:100%;
+	display:flex;
+	justify-content:space-between;
+	height:53px;
+	z-index:1;
+	user-select:none;
+}
+.navbarHeader{
+	flex-basis:32%;
+	display:flex;
+	align-items:center;
+	gap:5px;
+}
+.navbarBrand{
+	font-size:30px;
+	padding-left:25px;
+	cursor:pointer;
+}
+.navbarSection{
+	position:relative;
+	flex-basis:36%;
+	display:flex;
+	align-items:center;
+	gap:10px;
+}
+.navbarFooter{
+	flex-basis:32%;
+	display:flex;
+	justify-content:space-around;
+	align-items:center;
+	gap:45px;
+}
+.navbarFooterLeftSide{
+	display:flex;
+	justify-content:space-around;
+	gap:45px;
+}
+.navbarFooterRightSide{
+	display:flex;
+}
+.searchInputStyle{
+	text-align:center;
+	border-bottom:1px solid black !important;
+	outline:none;
+	width:65%;
+	height:75%;
+}
+.navbarButton{
+	cursor:pointer;
+}
+.navbarUser{
+	border:2px solid rgb(217,161,206);
+	border-radius:50%;
+	object-fit:cover;
+	width:45px;
+	height:45px;
+	margin-right:10px;
+	cursor:pointer;
+}
+
+
+/* --------------------------------- NAVBAR SEARCH --------------------------------- */
+
+
+.navbarSearchContainer{
+	position:absolute;
+	border:1px solid lightgray;
+	background-color:white;
+	width:65%;
+	height:250px;
+	top:50px;
+	overflow:auto;
+}
+
+.navbarSearch{
+	position:relative;
+	display:flex;
+	justify-content:space-between;
+	align-items:center;
+	padding:10px;
+	border-bottom:1px solid lightgray;
+	cursor:pointer;
+}
+
+.navbarSearchLeftSide{
+	flex-basis:20%;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+}
+
+.navbarSearchLeftSide img{
+	width:40px;
+	height:40px;
+	object-fit:cover;
+	border:1px solid black;
+	border-radius:50%
+}
+
+.navbarSearchRightSide{
+	flex-basis:80%;
+	text-align:center;
+}
+
+.searchSymbol{
+	position:absolute;
+}
+
+.searchResultFalse{
+	position:absolute;
+	top:40%;
+	left:30%;
+}
+
+
+/* --------------------------------- HOME --------------------------------- */
+
+.postStreaming{
+	min-height:100vh;
+	padding:101px 0;
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	align-items:center;
+	gap:35px;
+}
+
+
+
+
+
+
+/* --------------------------------- LOGIN SCREEN --------------------------------- */
+
+.loginScreen{
+	background: linear-gradient(90deg, rgba(197,193,255,1) 0%, rgba(246,191,253,1) 100%);
+	height:100vh;
+}
+.loginScreenContainer{
+	height:100%;
+	display:flex;
+}
+.loginScreenLeftSide{
+	padding-left:25px;
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	align-items:center;
+	gap:45px;
+	flex-basis:50%;
+}
+.loginScreenRightSide{
+	user-select:none;
+	flex-basis:50%;
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+	justify-content:center;
+	gap:20px;
+}
+input[type="text"],input[type="password"]{
+	text-align:left;
+	font-size:25px;
+	border:none;
+	outline:none;
+	width:50%;
+	height:10%;
+}
+input[type="text"]:focus,input[type="password"]:focus{
+	border-bottom:1px dashed black;
+}
+.authButton{
+	font-size:25px;
+	border:none;
+	outline:none;
+	width:50%;
+	height:8%;
+}
+input[type="search"]{
+	border:none;
+	outline:none;
+}
+.inputStyle{
+	border-bottom:1px dashed black;
+	background-color:inherit;
+}
+.buttonStyle{
+	cursor:pointer;
+	background-color:transparent;
+	border:1px dashed black;
+}
+.buttonStyle:hover{
+	background-color:black;
+	color:white;
+}
+
+
+/* --------------------------------- REGISTER SCREEN --------------------------------- */
+
+.registerScreen{
+	background: linear-gradient(90deg, rgba(197,193,255,1) 0%, rgba(246,191,253,1) 100%);
+	height:100vh;
+}
+.registerScreenContainer{
+	height:100%;
+	display:flex;
+}
+.registerScreenLeftSide{
+	padding-left:25px;
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	align-items:center;
+	gap:45px;
+	flex-basis:50%;
+}
+.registerScreenRightSide{
+	user-select:none;
+	flex-basis:50%;
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+	justify-content:center;
+	gap:10x;
+}
+.registerScreenCheckbox{
+	display:flex;
+	align-items:center;
+	margin:20px 0;
+	gap:20px;
+}
+input[type="checkbox"]{
+	width:25px;
+	height:25px;
+}
+.inputStyle{
+	border-bottom:1px dashed black;
+	background-color:inherit;
+}
+.buttonStyle{
+	cursor:pointer;
+	background-color:transparent;
+	border:1px dashed black;
+}
+.buttonStyle:hover{
+	background-color:black;
+	color:white;
+}
+
+
+.brand{
+	font-size:90px;
+}
+.tagline{
+	font-size:25px;
+}
+
+.formQuestion{
+	position:absolute;
+	bottom:100px;
+	font-size:15px;
+	text-align:center;
+}
+
+.brand,.tagline,.formQuestion{
+	color:white;
+}
+
+
+
+/* --------------------------------- POST --------------------------------- */
+
+.post{
+	width:450px;
+	height:600px;
+	box-shadow: 0 1px 2px 0 rgb(60 64 67 / 30%), 0 2px 6px 2px rgb(60 64 67 / 15%);
+	border-radius:10px;
+	display:flex;
+	flex-direction:column;
+	justify-content:space-between;
+	user-select:none;
+}
+.postHeader{
+	padding:0 10px;
+	display:flex;
+	justify-content:space-between;
+	align-items:center;
+	flex-grow:1;
+}
+.postUserDetails{
+	display:flex;
+	flex-direction:column;
+}
+.postUser{
+	display:flex;
+	align-items:center;
+	gap:10px;
+}
+.postUser img{
+	object-fit:cover;
+	border:2px solid rgb(217,161,206);
+	width:50px;
+	height:50px;
+	border-radius:50%;
+	cursor:pointer;
+}
+.postUser span{
+	cursor:pointer;
+}
+.postLocation{
+	font-size:12px;
+	color:gray;
+}
+.postOptions{
+	display:flex;
+	align-items:center;
+	gap:20px;
+	cursor:pointer;
+}
+.postContent{
+	height:55%;
+}
+.postContent img{
+	object-fit:cover;
+	width:100%;
+	height:100%;
+	cursor:pointer;
+}
+.postFooter{
+	padding:10px;
+	flex-grow:1.5;
+	display:flex;
+	flex-direction:column;
+	justify-content:space-between;
+}
+.postButtons{
+	display:flex;
+	justify-content:space-between;
+}
+.postButtonsLeftSide,.postButtonsRightSide{
+	display:flex;
+	gap:20px;
+	flex-grow:1;
+}
+.postButtonsLeftSide{
+	justify-content:space-around;
+	cursor:pointer;
+}
+.postButtonsRightSide{
+	justify-content:flex-end;
+	
+}
+.postCommentInput{
+	display:flex;
+	align-items:center;
+	gap:35px;
+	cursor:pointer;
+	
+}
+.commentInputStyle{
+	border-bottom:1px solid black !important;
+	padding-bottom:8px !important;
+	font-size:15px !important;
+	width:80% !important;
+	height:90% !important;
+}
+.postDetails{
+	display:flex;
+	justify-content:space-between;
+	font-size:12px !important;
+	text-align:right;
+}
+.postDetailsSeeComments{
+	text-decoration:underline;
+	color:blue;
+	cursor:pointer;
+}
+
+
+/* POST VIEWER */
+
+.postViewer{
+	padding-top:50px;
+	height:100vh;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	user-select:none;
+}
+
+.postViewerContainer{
+	box-shadow: 0 1px 2px 0 rgb(60 64 67 / 30%), 0 2px 6px 2px rgb(60 64 67 / 15%);
+	border-radius:10px;
+	width:80%;
+	height:80%;
+	display:flex;
+	justify-content:space-between;
+}
+.postViewerLeftSide{
+	width:70%;
+}
+.postViewerPhoto{
+	height:100%;
+	border-radius:10px 0 0 10px;
+}
+.postViewerPhoto img{
+	border-radius:10px 0 0 10px;
+	object-fit:cover;
+	width:100%;
+	height:100%;
+	cursor:pointer;
+}
+.postViewerRightSide{
+	flex-grow:1;
+	display:flex;
+	flex-direction:column;
+	justify-content:space-between;
+}
+.postViewerHeader{
+	padding:10px;
+	display:flex;
+	justify-content:space-between;
+	align-items:center;
+}
+.postViewerComments{
+	overflow:auto;
+	height:260px;
+}
+.postViewerButtons{
+	display:flex;
+	justify-content:space-between;
+	cursor:pointer;
+}
+.postViewerCommentInput{}
+.postViewerFooter{
+	padding:10px;
+	flex-grow:1;
+	display:flex;
+	flex-direction:column;
+	justify-content:space-between;
+}
+
+
+
+/* --------------------------------- POST FOLLOW BUTTON --------------------------------- */
+
+.followButton{
+	cursor:pointer;
+}
+
+
+/* --------------------------------- COMMENT --------------------------------- */
+
+
+.comment{
+	border-top:1px solid lightgray;
+	display:flex;
+	flex-direction:column;
+	padding:10px;
+}
+.commentUpperSide{
+	display:flex;
+	justify-content:space-between;
+}
+.commentProfilePhotoContent{
+	margin-right:10px;
+}
+.commentProfilePhotoContent img{
+	border:2px solid rgb(217,161,206);
+	object-fit:cover;
+	border-radius:50%;
+	width:45px;
+	height:45px;
+	cursor:pointer;
+	
+}
+.commentText{
+	flex-grow:1
+}
+.commentProfileName{
+	font-size:12px;
+	margin-bottom:5px;
+	cursor:pointer;
+}
+.commentTextContent{
+	width:220px;
+	font-size:14px;
+	word-wrap:break-word;
+}
+.commentLowerSide{
+	display:flex;
+	justify-content:flex-end;
+	align-items:center;
+}
+.commentSharedDate{
+	font-size:12px;
+}
+.commentWarn{
+	text-align:center;
+}
+
+
+
+
+
+/* --------------------------------- PROFILE --------------------------------- */
+
+.profile{
+	min-height:100vh;
+	padding-top:101px;
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+	user-select:none;
+	
+}
+
+
+/* --------------------------------- PROFILE DETAILS --------------------------------- */
+
+.profileDetails{
+	display:flex;
+	width:50%;
+	justify-content:center;
+	align-items:center;
+
+}
+.profileDetailsLeftSide{
+	flex-grow:1;
+}
+.profileDetailsUserPhoto{}
+.profileDetailsUserPhoto img{
+	border:2px solid rgb(217,161,206);
+	width:200px;
+	height:200px;
+	border-radius:50%;
+	object-fit:cover;
+}
+
+
+.profileDetailsRightSide{
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	gap:40px;
+	flex-grow:2;
+}
+.profileDetailsButton{
+	border-radius:10px;
+	background-color:rgb(246,191,253);
+	color:white;
+	font-weight:bold;
+	padding:10px;
+	cursor:pointer;
+}
+.profileDetailsHeader,.profileDetailsSection,.profileDetailsFooter{
+	display:flex;
+	justify-content:space-between;
+}
+.profileDetailsUsername{
+	align-self:center;
+}
+
+/* --------------------------------- PROFILE CONTENTS --------------------------------- */
+
+.profileContents{
+	padding:100px 0;
+	display:grid;
+	justify-content:center;
+	align-items:center;
+	grid-template-columns:repeat(4,1fr);
+	gap:60px;
+}
+
+.content{
+	box-shadow: 0 1px 2px 0 rgb(60 64 67 / 30%), 0 2px 6px 2px rgb(60 64 67 / 15%);
+	width:250px;
+	height:250px;
+}
+
+.content img{
+	object-fit:cover;
+	width:100%;
+	height:100%;
+	cursor:pointer;
+}
+
+
+/* --------------------------------- SETTINGS --------------------------------- */
+
+.settings{
+	padding:120px 0;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+}
+.settingsContainer{
+	width:80%;
+	box-shadow:0 1px 2px 0 rgb(60 64 67 / 30%), 0 2px 6px 2px rgb(60 64 67 / 15%);
+	border-radius:10px;
+}
+.settingsHeader{
+	font-size:35px;
+	text-align:center;
+	padding:15px 0;
+}
+
+.settingsHeader,.settingsSection{
+	border-bottom:1px solid lightgray;
+}
+.setting{
+	padding:20px;
+	display:flex;
+	flex-direction:column;
+	gap:25px;
+}
+
+.settingHeader{
+	display:flex;
+	align-items:center;
+	gap:45px;
+	font-size:21px;
+}
+.settingChangeButton{
+	border-radius:10px;
+	padding:8px;
+	background-color:rgb(246,191,253);
+	cursor:pointer;
+}
+.settingSection{
+	display:flex;
+	align-items:center;
+	gap:35px;
+}
+.settingSection img{
+	width:45px;
+	height:45px;
+	object-fit:cover;
+	border-radius:50%;
+}
+.settingDeleteAccountButton{
+	border-radius:10px;
+	padding:8px;
+	background-color:red;
+	color:white;
+	cursor:pointer;
+}
+.settingInput{
+	padding-left:9px;
+	border-radius:5px;
+	border:1px solid black !important;
+	height:25%;
+}
+
+
+/* --------------------------------- POST EDITOR --------------------------------- */
+
+
+.postEditor{
+	position:fixed;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	background-color:rgba(0,0,0,0.1);
+	display:flex;
+	justify-items:center;
+	align-items:center;
+	justify-content:center;
+}
+.postEditorContainer{
+	position:relative;
+	width:80%;
+	height:80%;
+	border-radius:10px;
+	background-color:white;
+	display:flex;
+	justify-content:space-between;
+}
+.postEditorHeader{
+	text-align:center;
+	font-size:35px;
+	padding:15px;
+	border-bottom:1px solid lightgray;
+}
+.postEditorLeftSide{
+	flex-basis:50%;
+	
+}
+.postEditorRightSide{
+	flex-basis:50%;
+	border-left:1px solid lightgray;
+	
+}
+.postEditorLeftSection{
+	height:80%;
+	width:100%;
+	display:flex;
+	flex-direction:column;
+	justify-content:space-around;
+	align-items:center;
+	gap:30px;
+}
+.postEditorRightSection{
+	height:80%;
+	width:100%;
+	display:flex;
+	flex-direction:column;
+	justify-content:space-around;
+	align-items:center;
+	gap:30px;
+}
+.postEditorContentDetail{
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+	width:80%;
+	height:30%;
+	gap:10px;
+}
+.postEditorContentDetail input[type="text"]{
+	padding-left:8px;
+	font-size:15px;
+	border-radius:5px;
+	border:1px solid black !important;
+	height:25%;
+}
+.postEditorContentDetail textarea{
+	padding:15px;
+	border-radius:10px;
+	resize:none;
+	outline:none;
+	width:100%;
+	height:100%;
+}
+.postEditorButton{
+	border-radius:10px;
+	padding:3%;
+	background-color:rgb(246,191,253);
+	text-align:center;
+	cursor:pointer
+}
+.uploadButton{
+	cursor:pointer;
+	position:relative;
+}
+#fileUploader{
+	position:absolute;
+	width:100%;
+	height:100%;
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+	opacity:0;
+	cursor:pointer;
+}
+.closeButton{
+	position:absolute;
+	right:5px;
+	top:3px;
+	cursor:pointer;
+}
+.postEditorFileUploader{
+	position:relative;
+	width:100%;
+	height:100%;
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	align-items:center;
+}
+.postEditorUploadedFile{
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	align-items:center;
+	gap:18px;
+}
+.postEditorUploadedFile img{
+	width:450px;
+	height:350px;
+	object-fit:cover;
+}
+.postEditorUploadedFileDeleteButton{
+	cursor:pointer
+}
+
+.postEditorLoading{
+	position:absolute;
+	bottom:100px;
+}
+
+
+/* --------------------------------- USER OPTIONS --------------------------------- */
+
+
+.userOptions{
+	position:absolute;
+	top:45px;
+	right:15px;
+	box-shadow: 0 1px 2px 0 rgb(60 64 67 / 30%), 0 2px 6px 2px rgb(60 64 67 / 15%);
+	background-color:white;
+	border-radius:10px;
+	display:flex;
+	flex-direction:column;
+	justify-content:space-around;
+	align-items:center;
+	padding:18px;
+	gap:25px;
+}
+
+.userOption{
+	cursor:pointer;
+}
+
+/* --------------------------------- LOADING SCREEN --------------------------------- */
+
+.loadingScreenContainer{
+	position:fixed;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;	
+	display:flex;
+	align-items:center;
+	justify-content:center;
+}
+.loadingScreen{
+	width:40%;
+	height:40%;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+}
+.loadingScreenTextFirst{
+	font-size:45px;
+}
+.loadingScreenTextSecond{
+	font-size:15px;
+}
+
+
+
+
+/* --------------------------------- NOT FOUND --------------------------------- */
+
+
+.notFoundContainer{
+	padding-top:170px;
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	align-items:center;
+	gap:50px;
+}
+.notFoundHeader{
+	font-size:100px;
+}
+.notFoundSection{
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	align-items:center;
+	font-size:30px;
+	gap:20px;
+}
+.notFoundGoHome{
+	text-decoration:none;
+	color:rgb(217,161,206)
+}
+
+
+
+
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: mintcream; 
+}
+::-webkit-scrollbar-thumb {
+  background: rgb(246,191,253); 
+  border-radius:10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(217,161,206); 
+}
+
+
+
+
+
+
+@media all and (width < 900px){
+	/* --------------------------------- LOGIN SCREEN --------------------------------- */
+
+	.tagline{
+		font-size:15px;
+	}
+	.loginScreenContainer{
+		flex-direction:column;
+	}
+	.loginScreenLeftSide{
+		padding-left:0;
+		flex-basis:40%;
+	}
+	.loginScreenRightSide{
+		flex-basis:40%;
+	}
+	input[type="text"],input[type="password"]{
+		font-size:18px;
+		height:20%;
+	}
+	input[type="text"]:focus,input[type="password"]:focus{
+		border-bottom:1px dashed black;
+	}
+	.authButton{
+		font-size:18px;
+		padding:17px;
+		display:flex;
+		justify-content:center;
+		align-items:center;
+	}
+	
+	
+	/* --------------------------------- REGISTER SCREEN --------------------------------- */
+	
+	
+	.registerScreenContainer{
+		flex-direction:column;
+	}
+	.registerScreenLeftSide{
+		padding-left:0;
+		flex-basis:40%;
+		margin-bottom:10px;
+	}
+	.registerScreenRightSide{
+		flex-basis:40%;
+		display:flex;
+		flex-direction:column;
+		align-items:center;
+		justify-content:center;
+		gap:20px;
+	}
+	.registerScreenCheckbox{
+		display:flex;
+		align-items:center;
+		margin:10px 0;
+		gap:20px;
+	}
+	.registerScreenCheckbox span{
+		font-size:16px;
+	}
+	input[type="checkbox"]{
+		width:15px;
+		height:15px;
+	}
+	
+	
+	
+	.formQuestion{
+		position:absolute;
+		bottom:30px;
+		font-size:15px;
+		text-align:center;
+	}
+	
+	
+	
+	
+	/* --------------------------------- POST EDITOR --------------------------------- */
+
+	.postEditor{
+		overflow:auto;
+	}
+	.postEditorContainer{
+		
+		width:90%;
+		height:92%;
+		border-radius:10px;
+		flex-direction:column;
+		overflow:auto;
+	}
+	.postEditorHeader{
+		
+		font-size:17px;
+		padding:15px;
+		margin-bottom:20px;
+		
+	}
+
+	.postEditorLeftSection{
+		font-size:12px;
+		display:flex;
+		flex-direction:column;
+		justify-content:space-around;
+		align-items:center;
+		gap:30px;
+		/* height:100%; */
+	}
+	.postEditorRightSection{
+		position:relative;
+		font-size:12px;
+		display:flex;
+		flex-direction:column;
+		justify-content:space-around;
+		align-items:center;
+		gap:30px;
+		padding-bottom:10px;
+	}
+	
+	.postEditorContentDetail input[type="text"]{
+		font-size:12px;
+		height:60%;
+	}
+	.postEditorContentDetail textarea{
+		font-size:12px;
+	}
+	
+	.postEditorUploadedFile img{
+		width:400px;
+		height:350px;
+	}	
+	.postEditorLoading{
+		bottom:10px;
+		right:10px;
+	}
+	
+	
+	/* --------------------------------- PROFILE DETAILS --------------------------------- */
+
+	.profileDetails{
+		display:flex;
+		width:80%;
+		justify-content:center;
+		align-items:center;
+		gap:20px;
+	}
+	.profileDetailsLeftSide{
+		flex-basis:30%
+	}
+	.profileDetailsUserPhoto img{
+		width:100px;
+		height:100px;
+	}
+	.profileDetailsRightSide{
+		flex-basis:70%;
+		font-size:10px;
+	}
+	
+	
+	
+	
+	
+	/* --------------------------------- PROFILE CONTENTS --------------------------------- */
+
+	.profileContents{
+		grid-template-columns:repeat(1,1fr);
+	}
+	
+	
+	/* --------------------------------- SETTINGS --------------------------------- */
+
+	
+	
+	.settingHeader{
+		justify-content:space-between;
+		font-size:12px;
+	}
+	.settingStatus{
+		font-size:12px;
+	}
+	.settingChangeButton{
+		font-size:10px;
+	}
+	.settingSection{
+		flex-direction:column;
+	}
+	
+	
+	
+	
+	/* --------------------------------- POST VIEWER --------------------------------- */
+
+	
+	
+	.postViewerContainer{
+		height:90%;
+		flex-direction:column;
+		overflow:auto;
+	}
+	.postViewerLeftSide{
+		width:100%;
+		flex-basis:60%;
+	}
+	.postViewerPhoto{
+		border-radius:none;
+	}
+	.postViewerPhoto img{
+		border-radius:0;
+	}
+	.postViewerRightSide{
+		flex-basis:10%;
+	}	
+	.comment{
+		padding:6px;
+	}
+	.postViewerFooter{
+		padding:15px;
+		flex-basis:30%;
+		
+	}
+
+
+	/* --------------------------------- NAVBAR --------------------------------- */
+	
+	.navbarSection{
+		flex-basis:40%;
+		justify-content:center;
+	}
+	.searchInputStyle{
+		padding-left:35px;
+		width:75%;
+	}
+	.searchSymbol{
+		left:14px;
+	}
+	
+	
+	/* --------------------------------- NAVBAR SEARCH --------------------------------- */
+	
+	.searchResultFalse{
+		position:absolute;
+		top:40%;
+		left:20%;
+		font-size:10px;
+	}
+	
+}
+
+
+@media all and (600px < width < 975px){
+	
+	/* --------------------------------- PROFILE DETAILS --------------------------------- */
+	
+	.profileDetails{
+		display:flex;
+		width:50%;
+		justify-content:center;
+		align-items:center;
+		gap:20px;
+	}
+	.profileDetailsLeftSide{
+		flex-basis:30%
+	}
+	.profileDetailsUserPhoto img{
+		width:100px;
+		height:100px;
+	}
+	.profileDetailsRightSide{
+		flex-basis:70%;
+		font-size:10px;
+	}
+	
+	
+	/* --------------------------------- PROFILE CONTENTS --------------------------------- */
+	
+	.profileContents{
+		grid-template-columns:repeat(2,1fr);
+	}
+	
+	
+}
+
+
+
+@media all and (width < 550px){
+	
+	/* --------------------------------- POST --------------------------------- */
+	
+	.post{
+		width:320px;
+		height:550px;
+	}
+	.navbarSearchContainer{
+		width:100%;
+	}
+	
+	
+	.profileDetailsButton{
+		padding:7px;
+	}
+	
+}
